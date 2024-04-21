@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8'
 services:
   mysql-container:
     image: mysql:8
@@ -30,7 +30,7 @@ services:
     restart: always
 
   angular-container:
-    build: ./frontend/front-end-app/dist/
+    build: ./frontend/front-end-app/
     container_name: angular-container
     ports:
       - 80:80
