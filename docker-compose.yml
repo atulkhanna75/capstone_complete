@@ -30,7 +30,7 @@ services:
     restart: always
 
   angular-container:
-    build: ./frontend/front-end-app/
+    build: ./frontend/front-end-app/dist/front-end-app/
     container_name: angular-container
     ports:
       - 80:80
